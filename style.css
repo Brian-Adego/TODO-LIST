@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: tomato;
+}
+
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0.15rem;
+  font-size: 1.75rem;
+  background: white;
+  border: none;
+}
+
+form button {
+  color: #d88771;
+  background: white;
+  cursor: pointer;
+}
+
+.filter-todo {
+  padding: 0.4em;
+  margin-left: 0.09rem;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  list-style-type: none;
+}
+
+.todo-list .list {
+  background: linear-gradient(120deg, orange, yellow);
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  margin: 3px 0;
+  text-transform: capitalize;
+}
+
+.todo-list .list span i {
+  margin-right: 10px;
+}
+
+.todo-list .list span .fa-check {
+  background: green;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.todo-list .list span .fa-trash {
+  background: crimson;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.check {
+  opacity: 0.4;
+  transition: opacity 450ms ease-in-out;
+  pointer-events: none;
+}

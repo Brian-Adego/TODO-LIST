@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo list</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./fontawesome-free-5.15.2-web/css/all.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <form>
+      <input type="text" class="input" />
+      <button class="todo-btn">
+        <i class="fas fa-plus-square"></i>
+      </button>
+      <div class="select">
+        <select name="todos" class="filter-todo">
+          <option value="All">All</option>
+          <option value="Completed">Completed</option>
+          <option value="Incomplete">Incomplete</option>
+        </select>
+      </div>
+    </form>
+    <ul class="todo-list"></ul>
+  </body>
+</html>
